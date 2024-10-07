@@ -49,11 +49,12 @@
           <li v-for="(st, i) in student" :key="i">
             <p>Name: {{ st.firstName }} {{ st.lastName }}</p>
             <p>Age :{{ st.age }}</p>
-            <p>Gender :{{st.gender }}</p>
-            <p>Grade :{{st.grade }}</p>
+            <p>Gender :{{ st.gender }}</p>
+            <p>Grade :{{ st.grade }}</p>
             <p>
               favourit Soprts:
-              <strong v-for="(sport, i) in st.favouritSoprts" :key="i">{{ sport }}<br>
+              <strong v-for="(sport, i) in st.favouritSoprts" :key="i"
+                >{{ sport }}<br />
               </strong>
             </p>
           </li>
@@ -66,9 +67,7 @@
 <script>
 export default {
   name: "MyForm",
-  data() {
-   
-  }
+  data() {},
 };
 </script>
 

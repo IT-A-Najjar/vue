@@ -9,17 +9,18 @@
       </ul>
     </div>
     <div class="btns">
-      <button style="">LOGIN</button>
-      <BUtton>SIGN Up</BUtton>
+      <button>LOGIN</button>
+      <button>SIGN UP</button>
     </div>
   </nav>
 </template>
+
 <script>
 export default {
   data() {
     return {
       logo: "My Logo",
-      links: ["Link one", "Link Tow", "Link Three", "Link Four"],
+      links: ["Link one", "Link Two", "Link Three", "Link Four"],
     };
   },
 };

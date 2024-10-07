@@ -1,13 +1,12 @@
 <template>
   <div class="my-main">
     <h1>this is my main page</h1>
-    
+
     <!-- <MyFrom /> -->
-  
-    </div>
+  </div>
 </template>
 <script>
-import MyFrom from "@/components/MyFrom.vue";
+// import MyFrom from "@/components/MyFrom.vue";
 //import MyComponent from "@/components/MyComponent.vue";
 //import MyComponentTow from "@/components/MyComponent.vue";
 //import MyCont from "@/components/MyContent.vue";
@@ -16,17 +15,10 @@ import MyFrom from "@/components/MyFrom.vue";
 export default {
   name: "MyMain",
   components: {
-    //MyFrom,
+    // MyFrom,
   },
-  data() {
-    
-      
-    }
-  };
-  
- 
-
-
+  data() {},
+};
 </script>
 <style>
 .my-nav {
