@@ -22,7 +22,7 @@
         <p>Result is {{ student.email }}</p>
       </div>
       <div>
-        <h3>favorit Sports</h3>
+        <h3>Favorite Sports</h3>
         <label for="tennis">Tennis</label>
         <input
           v-model="student.sports.tennis"
@@ -46,14 +46,15 @@
       </div>
       <div>
         <ul>
-          <li v-for="(st, i) in student" :key="i">
+          <li v-for="(st, i) in students" :key="i">
             <p>Name: {{ st.firstName }} {{ st.lastName }}</p>
-            <p>Age :{{ st.age }}</p>
-            <p>Gender :{{st.gender }}</p>
-            <p>Grade :{{st.grade }}</p>
+            <p>Age: {{ st.age }}</p>
+            <p>Gender: {{ st.gender }}</p>
+            <p>Grade: {{ st.grade }}</p>
             <p>
-              favourit Soprts:
-              <strong v-for="(sport, i) in st.favouritSoprts" :key="i">{{ sport }}<br>
+              Favorite Sports:
+              <strong v-for="(sport, i) in st.favoritSports" :key="i">
+                {{ sport }}<br />
               </strong>
             </p>
           </li>
@@ -67,12 +68,24 @@
 export default {
   name: "MyForm",
   data() {
-   
-  }
+    return {
+      student: {
+        firstName: "",
+        lastName: "",
+        age: null,
+        email: "",
+        sports: {
+          tennis: false,
+          football: false,
+        },
+      },
+      students: [], // تأكد من تعريف students كمصفوفة
+    };
+  },
 };
 </script>
 
-<style>
+<style scoped>
 .my-form {
   form {
     display: flex;
